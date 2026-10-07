@@ -21,8 +21,24 @@ def divide():
         b = float(input("b = "))
     return a / b
 
+def menu():
+    choix = 0
+    while choix not in [1, 2, 3, 4]:
+        print("Choisissez votre opération (1 pour add, 2 pour substracte, 3 pour multiply et 4 pour divide)")
+        choix = int(input("Choix : "))
+    match choix:
+        case 1:
+            result = add()
+        case 2:
+            result = substracte()
+        case 3:
+            result = multiply()
+        case 4:
+            result = divide()
+        case _:
+            print("Erreur")
+    return result
+
+
 if __name__ == "__main__" :
-    print(add())
-    print(substracte())
-    print(multiply())
-    print(divide())
+    print(menu())
