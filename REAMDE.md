@@ -1,4 +1,4 @@
-# Calculatrice 
+# Calculatrice amélioré
 
 ## Utilisation
 
